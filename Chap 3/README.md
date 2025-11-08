@@ -63,6 +63,16 @@ This is especially relevant for Windows systems, which rely on the spawn method 
 
 ---
 
+### 6️⃣ Daemon Threads
+Demonstrates the use of **daemon threads**, which run in the background and automatically terminate when the main program finishes execution.  
+They are ideal for background tasks like logging, monitoring, or cleanup, ensuring the program exits gracefully.
+
+**Key Features:**
+- Runs continuous background operations using `daemon=True`.  
+- Terminates automatically when the main thread completes.  
+- Useful for creating **non-blocking**, background system services.
+
+
 ## 🧠 Conclusion
 Process-based parallelism offers **true concurrency**, leveraging multiple CPU cores to improve performance for compute-intensive workloads.  
 Unlike threading, where the **Global Interpreter Lock (GIL)** restricts parallel execution, multiprocessing creates **isolated memory spaces** that enable simultaneous execution of tasks.  
